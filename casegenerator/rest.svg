@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="2125.9841"
+   width="4251.9683"
+   id="svg3266"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="lego-regal.svg">
+  <metadata
+     id="metadata3362">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3360" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="831"
+     id="namedview3358"
+     showgrid="false"
+     inkscape:zoom="0.18162386"
+     inkscape:cx="1263.416"
+     inkscape:cy="574.53101"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3266"
+     units="cm"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <g
+     id="g3318"
+     transform="translate(0,0.00364414)">
+    <polyline
+       points="26.5748025,894.6850175000001 1071.8503675,894.6850175000001 1071.8503675,912.4015525 1082.4802885,912.4015525 1082.4802885,986.8109995 1071.8503675,986.8109995 1071.8503675,993.8976135 1011.6141484999999,993.8976135 1011.6141484999999,1004.5275345 937.2047015,1004.5275345 937.2047015,993.8976135 869.8818685,993.8976135 869.8818685,1004.5275345 795.4724215000001,1004.5275345 795.4724215000001,993.8976135 728.1495884999999,993.8976135 728.1495884999999,1004.5275345 653.7401415,1004.5275345 653.7401415,993.8976135 586.4173085,993.8976135 586.4173085,1004.5275345 512.0078615,1004.5275345 512.0078615,993.8976135 444.6850285,993.8976135 444.6850285,1004.5275345 370.2755815,1004.5275345 370.2755815,993.8976135 302.95274850000004,993.8976135 302.95274850000004,1004.5275345 228.54330149999998,1004.5275345 228.54330149999998,993.8976135 161.2204685,993.8976135 161.2204685,1004.5275345 86.81102150000001,1004.5275345 86.81102150000001,993.8976135 26.5748025,993.8976135 26.5748025,986.8109995 15.944881500000001,986.8109995 15.944881500000001,912.4015525 26.5748025,912.4015525 26.5748025,894.6850175000001"
+       id="polyline3320"
+       style="fill:none;stroke:#ff0000;stroke-width:3.54330707" />
+  </g>
+</svg>
