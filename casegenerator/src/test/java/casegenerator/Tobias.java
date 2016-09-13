@@ -1,7 +1,5 @@
 package casegenerator;
 
-import static org.junit.Assert.*;
-
 import java.io.File;
 
 import org.junit.Test;
@@ -9,7 +7,6 @@ import org.junit.Test;
 import com.lauerbach.casegenerator.Drill;
 import com.lauerbach.casegenerator.Material;
 import com.lauerbach.casegenerator.edgegenerator.EdgeFactory.EdgeType;
-import com.lauerbach.casegenerator.panel.MixerBoxSide;
 import com.lauerbach.casegenerator.panel.Panel;
 import com.lauerbach.casegenerator.svg.Svg;
 import com.lauerbach.casegenerator.svg.UnitType;

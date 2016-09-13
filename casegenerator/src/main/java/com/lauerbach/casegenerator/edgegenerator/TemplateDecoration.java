@@ -16,7 +16,6 @@ package com.lauerbach.casegenerator.edgegenerator;
  */
 
 
-import com.lauerbach.casegenerator.Drill;
 import com.lauerbach.casegenerator.edgegenerator.EdgeFactory.EdgeSide;
 import com.lauerbach.casegenerator.svg.ContainerElement;
 import com.lauerbach.casegenerator.svg.Point;

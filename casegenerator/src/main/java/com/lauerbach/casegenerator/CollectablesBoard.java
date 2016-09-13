@@ -6,7 +6,6 @@ import com.lauerbach.casegenerator.panel.Panel;
 import com.lauerbach.casegenerator.svg.Circle;
 import com.lauerbach.casegenerator.svg.Point;
 import com.lauerbach.casegenerator.svg.Svg;
-import com.lauerbach.casegenerator.svg.UnitCalculator;
 import com.lauerbach.casegenerator.svg.UnitType;
 
 public class CollectablesBoard {
