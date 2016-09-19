@@ -35,7 +35,7 @@ public class NoseCut implements NoseGenerator {
 
 	public NoseCut(double noseLength, UnitType unit, Material material) {
 		this.length= UnitCalculator.getPX( noseLength, unit);
-		this.thickness= material.getThickness();
+		this.thickness= material.getPxThickness();
 	}
 
 	@Override

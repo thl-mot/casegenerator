@@ -34,7 +34,7 @@ public class Hole implements NoseGenerator {
 
 	public Hole(double border, double noseLength, UnitType unit, Material material) {
 		this.length= UnitCalculator.getPX( noseLength, unit);
-		this.thickness= material.getThickness();
+		this.thickness= material.getPxThickness();
 	}
 
 	@Override

@@ -32,10 +32,15 @@ public class Material {
 	}
 
 	public Material(double value, UnitType unit) {
-		this.thickness= UnitCalculator.getPX( value, unit);
+		this.thickness= value;
+		this.unit= unit;
 	}
 	
-	public double getThickness() {
+	public double getPxThickness() {
+		return UnitCalculator.getPX( thickness, unit);
+	}
+	
+	public double getUnitThickness() {
 		return thickness;
 	}
 	

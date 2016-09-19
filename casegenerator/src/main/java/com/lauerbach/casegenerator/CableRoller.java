@@ -52,8 +52,8 @@ public class CableRoller {
 			g.add(polyline);
 
 			polyline = new Polyline("green", "0.1");
-			polyline.addPoint(center.add(triangleH, -innerR / 2, unit).add(-material.getThickness(), 0));
-			polyline.addPoint(center.add(triangleH, innerR / 2, unit).add(-material.getThickness(), 0));
+			polyline.addPoint(center.add(triangleH, -innerR / 2, unit).add(-material.getPxThickness(), 0));
+			polyline.addPoint(center.add(triangleH, innerR / 2, unit).add(-material.getPxThickness(), 0));
 			g.add(polyline);
 
 			g.addAll(edge.getDecoration());
@@ -80,7 +80,7 @@ public class CableRoller {
 		Panel panel = new Panel(innerR, width, innerR / 2, unit, EdgeType.NOSE, EdgeType.NOSECUT, EdgeType.RUBBERNOSE,
 				EdgeType.RUBBERNOSE, material);
 		drumGroup.add(panel.generate(0, 0, UnitType.MM, drill, drill));
-		drumGroup.add(new Circle(new Point(innerR / 2, cableDrill, unit).add(0, material.getThickness()), cableDrill,
+		drumGroup.add(new Circle(new Point(innerR / 2, cableDrill, unit).add(0, material.getPxThickness()), cableDrill,
 				UnitType.MM, decoDrill.color, "0.2mm"));
 		drumGroup.addTranslate(offset);
 		return drumGroup;

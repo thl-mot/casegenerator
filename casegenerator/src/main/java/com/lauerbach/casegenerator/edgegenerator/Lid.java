@@ -30,7 +30,7 @@ public class Lid implements NoseGenerator {
 	}
 
 	public Lid(Material material) {
-		this.thickness= material.getThickness();
+		this.thickness= material.getPxThickness();
 	}
 
 	@Override

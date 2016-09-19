@@ -30,7 +30,7 @@ public class LidContact implements NoseGenerator {
 	}
 
 	public LidContact(Material material) {
-		this.thickness= material.getThickness();
+		this.thickness= material.getPxThickness();
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class TestMixerPult {
 		Drill decoDrill = new Drill(0.2, UnitType.MM, "blue");
 		MixerBox pult = new MixerBox(200, 140, 60, 80 , UnitType.MM, new Material(3, UnitType.MM));
 		
-		pult.generate(drill, decoDrill).write(new File("test.svg"), true);
+		pult.generate(drill, decoDrill).write(new File("results/testMixer.svg"), true);
 	}
 
 }

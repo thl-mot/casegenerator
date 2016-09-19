@@ -36,7 +36,7 @@ public class TestPult {
 		
 		Drill drill= new Drill(0.2, UnitType.MM, "red");
 		RubberBox pult= new RubberBox( 150, 100, 50, UnitType.MM, new Material(3));
-		pult.generate( drill).write( new File("test.svg"), true);
+		pult.generate( drill).write( new File("results/testPult.svg"), true);
 	}
 
 }

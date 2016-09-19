@@ -21,13 +21,13 @@ public class TestCableRoller {
 		Drill decoDrill = new Drill(0.2, UnitType.MM, "blue");
 
 		CableRoller pult = new CableRoller(30, 30, 70, UnitType.MM, new Material(3, UnitType.MM));
-		pult.generate(drill, decoDrill).write(new File("cableRoller_30.svg"), false);
+		pult.generate(drill, decoDrill).write(new File("results/cableRoller_30.svg"), false);
 		
 		pult = new CableRoller(60, 30, 70, UnitType.MM, new Material(3, UnitType.MM));
-		pult.generate(drill, decoDrill).write(new File("cableRoller_60.svg"), false);
+		pult.generate(drill, decoDrill).write(new File("results/cableRoller_60.svg"), false);
 
 		pult = new CableRoller(80, 30, 70, UnitType.MM, new Material(3, UnitType.MM));
-		pult.generate(drill, decoDrill).write(new File("cableRoller_80.svg"), false);
+		pult.generate(drill, decoDrill).write(new File("results/cableRoller_80.svg"), false);
 
 	}
 

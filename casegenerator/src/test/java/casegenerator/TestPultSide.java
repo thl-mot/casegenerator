@@ -40,7 +40,7 @@ public class TestPultSide {
 		Svg svg = new Svg("300mm", "300mm");
 		svg.add(pult.generate(10, 10, UnitType.MM, drill, drill));
 
-		svg.write(new File("test.svg"), true);
+		svg.write(new File("results/testPultSide.svg"), true);
 	}
 
 }

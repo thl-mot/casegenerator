@@ -23,7 +23,7 @@ public class TestCollectablesBoard {
 		Material material= new Material( 5, UnitType.MM);
 		
 		CollectablesBoard board = new CollectablesBoard(300, 60*4+5, 30, 3, UnitType.MM, material, material);
-		board.generate(drill, decorationDrill).write(new File("lego-regal.svg"), true);
+		board.generate(drill, decorationDrill).write(new File("results/lego-regal.svg"), true);
 	}
 
 }

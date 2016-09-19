@@ -33,7 +33,7 @@ public class NoseTCut implements NoseGenerator {
 
 	public NoseTCut(double noseLength, UnitType unit, Material material, int screwM, int screwL) {
 		this.length = UnitCalculator.getPX(noseLength, unit);
-		this.thickness = material.getThickness();
+		this.thickness = material.getPxThickness();
 		this.screwWidth = UnitCalculator.getPX(screwM, UnitType.MM);
 		this.nutWidth = UnitCalculator.getPX(screwM, UnitType.MM) * 2;
 		this.nutHeight = UnitCalculator.getPX(screwM, UnitType.MM);

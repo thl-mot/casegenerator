@@ -25,7 +25,7 @@ public class Tobias {
 		Svg svg = new Svg("300mm", "300mm");
 		svg.add(pult.generate(10, 10, UnitType.MM, drill, drill));
 
-		svg.write(new File("tobias.svg"), true);
+		svg.write(new File("results/tobias.svg"), true);
 	}
 
 }

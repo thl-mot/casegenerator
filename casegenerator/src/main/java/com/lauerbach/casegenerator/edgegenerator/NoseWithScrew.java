@@ -36,7 +36,7 @@ public class NoseWithScrew implements NoseGenerator {
 
 	public NoseWithScrew(double noseLength, UnitType unit, Material material, Screw screw) {
 		this.length = UnitCalculator.getPX(noseLength, unit);
-		this.thickness = material.getThickness();
+		this.thickness = material.getPxThickness();
 		this.screw = screw;
 	}
 

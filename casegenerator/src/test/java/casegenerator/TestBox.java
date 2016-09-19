@@ -35,7 +35,7 @@ public class TestBox {
 		
 		Drill drill= new Drill(1, UnitType.MM, "red");
 		Box box= new Box( 200, 100, 50, UnitType.MM, new Material(3),true);
-		box.generate( drill).write( new File("test.svg"), true);
+		box.generate( drill).write( new File("results/test.svg"), true);
 	}
 
 }

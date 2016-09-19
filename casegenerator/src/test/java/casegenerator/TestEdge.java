@@ -92,7 +92,7 @@ public class TestEdge {
 				.getDecoration());
 		svg.addAll(horEdgeTemplate.getCut(new Point(10, 10 + 70, UnitType.MM), EdgeType.HOLE, EdgeSide.TOP)
 				.getDecoration());
-		svg.write(new File("test.svg"), true);
+		svg.write(new File("results/testEdges.svg"), true);
 
 	}
 

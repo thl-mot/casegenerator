@@ -40,7 +40,7 @@ public class RubberNose implements NoseGenerator {
 
 	public RubberNose(double noseLength, double rubberStrength, UnitType unit, Material material) {
 		this.length = UnitCalculator.getPX(noseLength, unit);
-		this.thickness = material.getThickness();
+		this.thickness = material.getPxThickness();
 		this.rubberStrength = UnitCalculator.getPX(rubberStrength, unit);
 		this.savety = this.rubberStrength;
 		this.trapez = this.rubberStrength * 0.2;
