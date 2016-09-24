@@ -20,6 +20,7 @@ import java.util.List;
 
 import com.lauerbach.casegenerator.Drill;
 import com.lauerbach.casegenerator.Material;
+import com.lauerbach.casegenerator.PanelDecorator;
 import com.lauerbach.casegenerator.edgegenerator.Edge;
 import com.lauerbach.casegenerator.edgegenerator.EdgeFactory;
 import com.lauerbach.casegenerator.edgegenerator.EdgeFactory.EdgeSide;
@@ -45,6 +46,8 @@ public class Panel {
 
 	Material leftMaterial, rightMaterial, topMaterial, bottomMaterial;
 	EdgeType leftSide, rightSide, topSide, bottomSide;
+	
+	PanelDecorator panelDecorator= null;
 
 	public Panel(double w, double h, double noseLength, UnitType unit, EdgeType leftSide, EdgeType rightSide,
 			EdgeType topSide, EdgeType bottomSide, Material leftMaterial, Material rightMaterial, Material topMaterial, Material bottomMaterial) {
@@ -148,6 +151,14 @@ public class Panel {
 		}
 
 		return g;
+	}
+
+	public PanelDecorator getPanelDecorator() {
+		return panelDecorator;
+	}
+
+	public void setPanelDecorator(PanelDecorator panelDecorator) {
+		this.panelDecorator = panelDecorator;
 	}
 
 }

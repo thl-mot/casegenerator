@@ -22,7 +22,7 @@ import com.lauerbach.casegenerator.panel.Panel;
 import com.lauerbach.casegenerator.svg.Svg;
 import com.lauerbach.casegenerator.svg.UnitType;
 
-public class MixerBox {
+public class MixerBox implements SvgGenerator {
 	double l, w, h1, h2;
 	UnitType unit;
 
