@@ -20,21 +20,28 @@ public class CollectablesBoard {
 
 	UnitType unit;
 
-	public CollectablesBoard(double w, double h, double d, int shelfes, UnitType unit, Material frameMaterial,
+	public CollectablesBoard(double w, double h, double d, int shelfes, int noseWidth, UnitType unit, Material frameMaterial,
 			Material shelfMaterial) {
 		super();
 		this.w = w;
 		this.h = h;
 		this.d = d;
 		this.shelves = shelfes;
+		this.noseWidth= noseWidth;
 		this.unit = unit;
 		this.frameMaterial = frameMaterial;
 		this.shelfMaterial = shelfMaterial;
 	}
 
+	public CollectablesBoard(double w, double h, double d, int shelfes, UnitType unit, Material frameMaterial,
+			Material shelfMaterial) {
+		this(w, h, d, shelfes, 15, unit, frameMaterial, shelfMaterial);
+	}
+
+	
 	public Svg generate(Drill drill, Drill decorationDrill) {
 
-		Svg svg = new Svg("500mm", "600mm");
+		Svg svg = new Svg("1000mm", "600mm");
 
 		double y = 5;
 		CollectablesPanel back = new CollectablesPanel(w, h, noseWidth, shelves, unit, EdgeType.NOSE, EdgeType.NOSE,
