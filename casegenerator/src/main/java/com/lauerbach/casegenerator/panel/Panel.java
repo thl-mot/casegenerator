@@ -150,6 +150,12 @@ public class Panel {
 			g.add(rect);
 		}
 
+		if (panelDecorator!=null) {
+			Group deco= new Group();
+			deco.addTranslate( offset);
+			panelDecorator.addDecoration( deco, decorationDrill);
+			g.add( deco);
+		}
 		return g;
 	}
 

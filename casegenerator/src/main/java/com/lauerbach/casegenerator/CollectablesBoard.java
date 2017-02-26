@@ -41,7 +41,7 @@ public class CollectablesBoard {
 	
 	public Svg generate(Drill drill, Drill decorationDrill) {
 
-		Svg svg = new Svg("1000mm", "600mm");
+		Svg svg = new Svg("1200mm", "600mm");
 
 		double y = 5;
 		CollectablesPanel back = new CollectablesPanel(w, h, noseWidth, shelves, unit, EdgeType.NOSE, EdgeType.NOSE,

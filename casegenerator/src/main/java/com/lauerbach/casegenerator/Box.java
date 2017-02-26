@@ -15,7 +15,6 @@ package com.lauerbach.casegenerator;
  *  limitations under the License.
  */
 
-
 import com.lauerbach.casegenerator.edgegenerator.EdgeFactory.EdgeType;
 import com.lauerbach.casegenerator.panel.Panel;
 import com.lauerbach.casegenerator.svg.Svg;
@@ -26,8 +25,10 @@ public class Box {
 	UnitType unit;
 
 	Material top, bottom, sides, rear, front;
-	
+
 	boolean closed;
+
+	PanelDecorator base, first, second;
 
 	public Box(double l, double w, double h, UnitType unit, Material m, boolean closed) {
 		this.l = l;
@@ -39,24 +40,41 @@ public class Box {
 		this.sides = m;
 		this.rear = m;
 		this.front = m;
-		this.closed= closed;
+		this.closed = closed;
 	}
 
 	public Svg generate(Drill drill) {
-		Drill decorationDrill= new Drill( drill.getDiameterPX(), "blue");
+		Drill decorationDrill = new Drill(drill.getDiameterPX(), "blue");
 
-		Svg svg= new Svg( "300mm", "300mm");
-		
-		Panel top= new Panel( l, h, 15, UnitType.MM, EdgeType.NOSE, EdgeType.NOSE, closed ?  EdgeType.NOSE : EdgeType.LID, EdgeType.NOSE, sides);
-		svg.add( top.generate( 5, 5, UnitType.MM, drill, decorationDrill));
-		
-		Panel side= new Panel( w, h, 15, UnitType.MM, EdgeType.NOSECUT, EdgeType.NOSECUT, closed ? EdgeType.NOSE : EdgeType.LID, EdgeType.NOSE, sides);
-		svg.add( side.generate( 5,  h+10, UnitType.MM,drill, decorationDrill));
+		Svg svg = new Svg("1200mm", "600mm");
 
-		Panel frontBack= new Panel( l, w, 15, UnitType.MM, EdgeType.NOSECUT, EdgeType.NOSECUT, EdgeType.NOSECUT, EdgeType.NOSECUT, sides);
-		svg.add( frontBack.generate( 5,  h+h+15, UnitType.MM, drill, decorationDrill));
-		
+		Panel top = new Panel(l, h, 15, UnitType.MM, EdgeType.NOSE, EdgeType.NOSE,
+				closed ? EdgeType.NOSE : EdgeType.LID, EdgeType.NOSE, sides);
+		svg.add(top.generate(5, 5, UnitType.MM, drill, decorationDrill));
+
+		Panel side = new Panel(w, h, 15, UnitType.MM, EdgeType.NOSECUT, EdgeType.NOSECUT,
+				closed ? EdgeType.NOSE : EdgeType.LID, EdgeType.NOSE, sides);
+		svg.add(side.generate(5, h + 10, UnitType.MM, drill, decorationDrill));
+
+		Panel frontBack = new Panel(l, w, 15, UnitType.MM, EdgeType.NOSECUT, EdgeType.NOSECUT, EdgeType.NOSECUT,
+				EdgeType.NOSECUT, sides);
+		frontBack.setPanelDecorator( base);
+		svg.add(frontBack.generate(5, h + h + 15, UnitType.MM, drill, decorationDrill));
+
 		return svg;
+	}
+
+	public void setBasePanelDecorator(PanelDecorator deco) {
+		this.base = deco;
+	}
+
+	public void setFirstSidePanelDecorator(PanelDecorator deco) {
+		this.first= deco;
+		
+	}
+
+	public void setSecondSidePanelDecorator(PanelDecorator deco) {
+		this.second = deco;
 	}
 
 }
